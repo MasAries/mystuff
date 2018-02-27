@@ -13,7 +13,7 @@ Config::set('default_language', 'en');					// Set the default language --> en
 Config::set('default_controller', 'pages');
 Config::set('default_action', 'index');					// Set the defaut action to open index.html/php
 //***********************************************************************************************************************************//
-Config::set('stream_svr_url', 'http://54.233.91.111');		// Set the panel url, should be replaced by your ddns --> 'http://ddns'
+Config::set('stream_svr_url', 'http://195.154.235.105');		// Set the panel url, should be replaced by your ddns --> 'http://ddns'
 Config::set('stream_svr_port', '80');					// Set the panel port, default http (used for server admin)
 Config::set('panel_chain', 'IPTV_PANEL');				// Set the IPTV Panel chain
 Config::set('stream_1st_port', '2000');					// Set the 1st port used for vlc restreaming
@@ -25,13 +25,13 @@ Config::set('fw_cmd', 'ufw'); 							// UFW bin
 Config::set('enable_fw', 'ON'); 						// Close all incoming connection not allowed (Admin/Peers)
 Config::set('close_svr_port', 'ON'); 					// Firewall Setings: 'stream_svr_port' only open for admin user host
 Config::set('close_ech_port', 'ON'); 					// Firewall Setings: 'stream_ech_port' only open for user host
-Config::set('net_interface', 'eth0'); 					// Network Interface
+Config::set('net_interface', 'em1'); 					// Network Interface
 //***********************************************************************************************************************************//
 Config::set('restream_prog', 'vlc'); 					// Restream Program: vlc/ffmpeg (only vlc in release 0.01)
-Config::set('streaming_agent', 'MyIPTV-Agent'); 
+Config::set('streaming_agent', 'VLC/2.1.3 LibVLC/2.1.3'); 
 Config::set('engine-user', 'www-data');
 Config::set('engine-cmd', '/usr/bin/cvlc');
-Config::set('network-caching', '3000'); 
+Config::set('network-caching', '5000'); 
 Config::set('verbose', '0'); 
 Config::set('logfile', '/tmp/');
 //***********************************************************************************************************************************//
